@@ -23,7 +23,7 @@ class SwaggerValidatorPactConsumerTest extends FunSpec with Matchers {
             .description("Fetching least secure auth token ever")
             .uponReceiving(
               method = GET,
-              path = "/questions/test",
+              path = "/questions/test1",
               query = None,
               headers = Map("Accept" -> "application/json"),
               body = None,
