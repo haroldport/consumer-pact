@@ -16,8 +16,8 @@ class SwaggerValidatorPactConsumerTest extends FunSpec with Matchers {
   describe("Connecting to the Provider service") {
     it("should be able to get an auth token") {
       forgePact
-        .between("Consumer")
-        .and("Provider")
+        .between("microservice-c1")
+        .and("microservice-p1")
         .addInteraction(
           interaction
             .description("Fetching least secure auth token ever")
