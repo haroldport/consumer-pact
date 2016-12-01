@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SBT: io.rest-assured:xml-path:3.0.0:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/io.rest-assured/xml-path/jars/xml-path-3.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/io.rest-assured/xml-path/srcs/xml-path-3.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

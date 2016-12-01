@@ -1,0 +1,5 @@
+[0m[[0minfo[0m] [0m[32mSwaggerValidatorPactConsumerTest:[0m[0m
+[0m[[0minfo[0m] [0m[32mConnecting to the Provider service[0m[0m
+[0m[[0minfo[0m] [0m[32m- should be able to get an auth token[0m[0m
+[0m[[0minfo[0m] [0m[31m- should be able to fetch results *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  false did not equal true (SwaggerValidatorPactConsumerTest.scala:68)[0m[0m
