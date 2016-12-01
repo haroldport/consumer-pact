@@ -43,36 +43,36 @@ class SwaggerValidatorPactConsumerTest extends FunSpec with Matchers {
         }
     }
 
-    it("should be able to fetch results"){
-
-      val question = Question("test", "MyTitle1", "The text of my question 1")
-
-      val body = write(
-        question
-      )
-
-      forgePact
-        .between("Consumer")
-        .and("Provider")
-        .addInteraction(
-          interaction
-            .description("Fetching results")
-            .given("Results: Bob, Fred, Harry")
-            .uponReceiving("/questions/test")
-            .willRespondWith(200, body)
-        )
-        .runConsumerTest { mockConfig =>
-
-          val results = ProviderClient.fetchResults(mockConfig.baseUrl)
-
-          results.isDefined shouldEqual true
-          results.get.id shouldEqual "test"
-          results.get.title shouldEqual "MyTitle1"
-          results.get.text shouldEqual "The text of my question 1"
-
-        }
-
-    }
+//    it("should be able to fetch results"){
+//
+//      val question = Question("test", "MyTitle1", "The text of my question 1")
+//
+//      val body = write(
+//        question
+//      )
+//
+//      forgePact
+//        .between("Consumer")
+//        .and("Provider")
+//        .addInteraction(
+//          interaction
+//            .description("Fetching results")
+//            .given("Results: Bob, Fred, Harry")
+//            .uponReceiving("/questions/test")
+//            .willRespondWith(200, body)
+//        )
+//        .runConsumerTest { mockConfig =>
+//
+//          val results = ProviderClient.fetchResults(mockConfig.baseUrl)
+//
+//          results.isDefined shouldEqual true
+//          results.get.id shouldEqual "test"
+//          results.get.title shouldEqual "MyTitle1"
+//          results.get.text shouldEqual "The text of my question 1"
+//
+//        }
+//
+//    }
 
   }
 

@@ -13,6 +13,7 @@ object ProviderClient {
   private implicit val formats = DefaultFormats
 
   def fetchResults(baseUrl: String): Option[Question] = {
+    println(baseUrl + "/test")
     Http(baseUrl + "/test").asString match {
       case r: HttpResponse[String] if r.is2xx =>
         parse(r.body).extractOpt[Question]
