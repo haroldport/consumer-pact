@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20161201113736"/>
+		date="20161207113926"/>
 	<dependencies>
 		<module organisation="org.scalaj" name="scalaj-http_2.11">
 			<revision name="1.1.5" status="release" pubdate="20150701142715" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/scalaj/scalaj-http" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="108">
@@ -208,7 +208,7 @@
 		</module>
 		<module organisation="org.apache.httpcomponents" name="httpmime">
 			<revision name="4.5.1" status="release" pubdate="20150911075735" resolver="public" artresolver="public" homepage="http://hc.apache.org/httpcomponents-client" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="95">
-				<metadata-artifact status="successful" details="" size="4782" time="487" location="/Users/Harold/.ivy2/cache/org.apache.httpcomponents/httpmime/ivy-4.5.1.xml" searched="true" original-local-location="/Users/Harold/.ivy2/cache/org.apache.httpcomponents/httpmime/ivy-4.5.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpmime/4.5.1/httpmime-4.5.1.pom"/>
+				<metadata-artifact status="successful" details="" size="4782" time="467" location="/Users/Harold/.ivy2/cache/org.apache.httpcomponents/httpmime/ivy-4.5.1.xml" searched="true" original-local-location="/Users/Harold/.ivy2/cache/org.apache.httpcomponents/httpmime/ivy-4.5.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpmime/4.5.1/httpmime-4.5.1.pom"/>
 				<caller organisation="io.rest-assured" name="rest-assured" conf="compile, runtime" rev="4.5.1" rev-constraint-default="4.5.1" rev-constraint-dynamic="4.5.1" callerrev="3.0.0"/>
 				<artifacts>
 					<artifact name="httpmime" type="jar" ext="jar" status="no" details="" size="40698" time="0" location="/Users/Harold/.ivy2/cache/org.apache.httpcomponents/httpmime/jars/httpmime-4.5.1.jar">
@@ -219,7 +219,7 @@
 		</module>
 		<module organisation="org.apache.httpcomponents" name="httpclient">
 			<revision name="4.5.2" status="release" pubdate="20160221110550" resolver="public" artresolver="public" homepage="http://hc.apache.org/httpcomponents-client" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="93">
-				<metadata-artifact status="successful" details="" size="6393" time="535" location="/Users/Harold/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.5.2.xml" searched="true" original-local-location="/Users/Harold/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.5.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.pom"/>
+				<metadata-artifact status="successful" details="" size="6393" time="774" location="/Users/Harold/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.5.2.xml" searched="true" original-local-location="/Users/Harold/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.5.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.pom"/>
 				<caller organisation="com.github.tomakehurst" name="wiremock" conf="compile, runtime" rev="4.5.1" rev-constraint-default="4.5.1" rev-constraint-dynamic="4.5.1" callerrev="2.1.7"/>
 				<caller organisation="org.apache.httpcomponents" name="httpmime" conf="compile, runtime" rev="4.5.1" rev-constraint-default="4.5.1" rev-constraint-dynamic="4.5.1" callerrev="4.5.1"/>
 				<caller organisation="io.rest-assured" name="rest-assured" conf="compile, runtime" rev="4.5.2" rev-constraint-default="4.5.2" rev-constraint-dynamic="4.5.2" callerrev="3.0.0"/>
@@ -232,7 +232,7 @@
 				</artifacts>
 			</revision>
 			<revision name="4.5.1" status="release" pubdate="20150911075604" resolver="public" artresolver="public" evicted="latest-revision" evicted-reason="" homepage="http://hc.apache.org/httpcomponents-client" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
-				<metadata-artifact status="successful" details="" size="6393" time="510" location="/Users/Harold/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.5.1.xml" searched="true" original-local-location="/Users/Harold/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.5.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.1/httpclient-4.5.1.pom"/>
+				<metadata-artifact status="successful" details="" size="6393" time="1086" location="/Users/Harold/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.5.1.xml" searched="true" original-local-location="/Users/Harold/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.5.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.1/httpclient-4.5.1.pom"/>
 				<evicted-by rev="4.5.2"/>
 				<caller organisation="com.github.tomakehurst" name="wiremock" conf="compile, runtime" rev="4.5.1" rev-constraint-default="4.5.1" rev-constraint-dynamic="4.5.1" callerrev="2.1.7"/>
 				<caller organisation="org.apache.httpcomponents" name="httpmime" conf="compile, runtime" rev="4.5.1" rev-constraint-default="4.5.1" rev-constraint-dynamic="4.5.1" callerrev="4.5.1"/>
@@ -250,7 +250,7 @@
 		</module>
 		<module organisation="org.apache.httpcomponents" name="httpcore">
 			<revision name="4.4.4" status="release" pubdate="20151026121814" resolver="public" artresolver="public" homepage="http://hc.apache.org/httpcomponents-core-ga" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="94">
-				<metadata-artifact status="successful" details="" size="5522" time="421" location="/Users/Harold/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.4.4.xml" searched="true" original-local-location="/Users/Harold/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.4.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.pom"/>
+				<metadata-artifact status="successful" details="" size="5522" time="615" location="/Users/Harold/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.4.4.xml" searched="true" original-local-location="/Users/Harold/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.4.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.pom"/>
 				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="4.4.3" rev-constraint-default="4.4.3" rev-constraint-dynamic="4.4.3" callerrev="4.5.1"/>
 				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="4.4.4" rev-constraint-default="4.4.4" rev-constraint-dynamic="4.4.4" callerrev="4.5.2"/>
 				<artifacts>
@@ -260,7 +260,7 @@
 				</artifacts>
 			</revision>
 			<revision name="4.4.3" status="release" pubdate="20150904134029" resolver="public" artresolver="public" evicted="latest-revision" evicted-reason="" homepage="http://hc.apache.org/httpcomponents-core-ga" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
-				<metadata-artifact status="successful" details="" size="5522" time="447" location="/Users/Harold/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.4.3.xml" searched="true" original-local-location="/Users/Harold/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.4.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.3/httpcore-4.4.3.pom"/>
+				<metadata-artifact status="successful" details="" size="5522" time="825" location="/Users/Harold/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.4.3.xml" searched="true" original-local-location="/Users/Harold/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.4.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.3/httpcore-4.4.3.pom"/>
 				<evicted-by rev="4.4.4"/>
 				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="4.4.3" rev-constraint-default="4.4.3" rev-constraint-dynamic="4.4.3" callerrev="4.5.1"/>
 				<artifacts>
@@ -334,7 +334,7 @@
 		</module>
 		<module organisation="org.apache.commons" name="commons-collections4">
 			<revision name="4.0" status="release" pubdate="20131120174623" resolver="public" artresolver="public" homepage="http://commons.apache.org/proper/commons-collections/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="88">
-				<metadata-artifact status="successful" details="" size="20162" time="595" location="/Users/Harold/.ivy2/cache/org.apache.commons/commons-collections4/ivy-4.0.xml" searched="true" original-local-location="/Users/Harold/.ivy2/cache/org.apache.commons/commons-collections4/ivy-4.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-collections4/4.0/commons-collections4-4.0.pom"/>
+				<metadata-artifact status="successful" details="" size="20162" time="641" location="/Users/Harold/.ivy2/cache/org.apache.commons/commons-collections4/ivy-4.0.xml" searched="true" original-local-location="/Users/Harold/.ivy2/cache/org.apache.commons/commons-collections4/ivy-4.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-collections4/4.0/commons-collections4-4.0.pom"/>
 				<caller organisation="com.flipkart.zjsonpatch" name="zjsonpatch" conf="compile, runtime" rev="4.0" rev-constraint-default="4.0" rev-constraint-dynamic="4.0" callerrev="0.2.1"/>
 				<artifacts>
 					<artifact name="commons-collections4" type="jar" ext="jar" status="no" details="" size="610259" time="0" location="/Users/Harold/.ivy2/cache/org.apache.commons/commons-collections4/jars/commons-collections4-4.0.jar">
@@ -658,7 +658,7 @@
 		</module>
 		<module organisation="xerces" name="xercesImpl">
 			<revision name="2.9.1" status="release" pubdate="20081001171919" resolver="public" artresolver="public" homepage="http://xerces.apache.org/xerces2-j" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="57">
-				<metadata-artifact status="successful" details="" size="1363" time="556" location="/Users/Harold/.ivy2/cache/xerces/xercesImpl/ivy-2.9.1.xml" searched="true" original-local-location="/Users/Harold/.ivy2/cache/xerces/xercesImpl/ivy-2.9.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1.pom"/>
+				<metadata-artifact status="successful" details="" size="1363" time="528" location="/Users/Harold/.ivy2/cache/xerces/xercesImpl/ivy-2.9.1.xml" searched="true" original-local-location="/Users/Harold/.ivy2/cache/xerces/xercesImpl/ivy-2.9.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1.pom"/>
 				<caller organisation="net.sourceforge.nekohtml" name="nekohtml" conf="compile, runtime" rev="2.9.1" rev-constraint-default="2.9.1" rev-constraint-dynamic="2.9.1" callerrev="1.9.16"/>
 				<artifacts>
 					<artifact name="xercesImpl" type="jar" ext="jar" status="no" details="" size="1229125" time="0" location="/Users/Harold/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.9.1.jar">
@@ -715,7 +715,7 @@
 		</module>
 		<module organisation="commons-beanutils" name="commons-beanutils">
 			<revision name="1.8.0" status="release" pubdate="20080828112124" resolver="public" artresolver="public" homepage="http://commons.apache.org/beanutils/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="52">
-				<metadata-artifact status="successful" details="" size="10786" time="704" location="/Users/Harold/.ivy2/cache/commons-beanutils/commons-beanutils/ivy-1.8.0.xml" searched="true" original-local-location="/Users/Harold/.ivy2/cache/commons-beanutils/commons-beanutils/ivy-1.8.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.8.0/commons-beanutils-1.8.0.pom"/>
+				<metadata-artifact status="successful" details="" size="10786" time="671" location="/Users/Harold/.ivy2/cache/commons-beanutils/commons-beanutils/ivy-1.8.0.xml" searched="true" original-local-location="/Users/Harold/.ivy2/cache/commons-beanutils/commons-beanutils/ivy-1.8.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.8.0/commons-beanutils-1.8.0.pom"/>
 				<caller organisation="net.sf.json-lib" name="json-lib" conf="compile, runtime" rev="1.8.0" rev-constraint-default="1.8.0" rev-constraint-dynamic="1.8.0" callerrev="2.3"/>
 				<artifacts>
 					<artifact name="commons-beanutils" type="jar" ext="jar" status="no" details="" size="231320" time="0" location="/Users/Harold/.ivy2/cache/commons-beanutils/commons-beanutils/jars/commons-beanutils-1.8.0.jar">
@@ -817,7 +817,7 @@
 				</artifacts>
 			</revision>
 			<revision name="1.4" status="release" pubdate="20090809162217" resolver="public" artresolver="public" evicted="latest-revision" evicted-reason="" homepage="http://commons.apache.org/codec/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
-				<metadata-artifact status="successful" details="" size="10494" time="859" location="/Users/Harold/.ivy2/cache/commons-codec/commons-codec/ivy-1.4.xml" searched="true" original-local-location="/Users/Harold/.ivy2/cache/commons-codec/commons-codec/ivy-1.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.4/commons-codec-1.4.pom"/>
+				<metadata-artifact status="successful" details="" size="10494" time="683" location="/Users/Harold/.ivy2/cache/commons-codec/commons-codec/ivy-1.4.xml" searched="true" original-local-location="/Users/Harold/.ivy2/cache/commons-codec/commons-codec/ivy-1.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.4/commons-codec-1.4.pom"/>
 				<evicted-by rev="1.9"/>
 				<caller organisation="net.databinder" name="unfiltered_2.11" conf="compile, runtime" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.4" callerrev="0.8.2"/>
 				<artifacts>
@@ -977,7 +977,7 @@
 		</module>
 		<module organisation="com.fasterxml.jackson.core" name="jackson-databind">
 			<revision name="2.6.3" status="release" pubdate="20151012133152" resolver="public" artresolver="public" homepage="http://github.com/FasterXML/jackson" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
-				<metadata-artifact status="successful" details="" size="6064" time="736" location="/Users/Harold/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/ivy-2.6.3.xml" searched="true" original-local-location="/Users/Harold/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/ivy-2.6.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.6.3/jackson-databind-2.6.3.pom"/>
+				<metadata-artifact status="successful" details="" size="6064" time="557" location="/Users/Harold/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/ivy-2.6.3.xml" searched="true" original-local-location="/Users/Harold/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/ivy-2.6.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.6.3/jackson-databind-2.6.3.pom"/>
 				<caller organisation="com.github.tomakehurst" name="wiremock" conf="compile, runtime" rev="2.6.3" rev-constraint-default="2.6.3" rev-constraint-dynamic="2.6.1" callerrev="2.1.7"/>
 				<caller organisation="com.atlassian.oai" name="swagger-request-validator-pact" conf="default, compile, runtime, master" rev="2.6.3" rev-constraint-default="2.6.3" rev-constraint-dynamic="2.6.3" callerrev="1.0.6"/>
 				<caller organisation="com.flipkart.zjsonpatch" name="zjsonpatch" conf="compile, runtime" rev="2.6.3" rev-constraint-default="2.6.3" rev-constraint-dynamic="2.3.2" callerrev="0.2.1"/>
@@ -992,7 +992,7 @@
 		</module>
 		<module organisation="com.fasterxml.jackson.core" name="jackson-core">
 			<revision name="2.6.3" status="release" pubdate="20151012120759" resolver="public" artresolver="public" homepage="https://github.com/FasterXML/jackson-core" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
-				<metadata-artifact status="successful" details="" size="4867" time="533" location="/Users/Harold/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/ivy-2.6.3.xml" searched="true" original-local-location="/Users/Harold/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/ivy-2.6.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.6.3/jackson-core-2.6.3.pom"/>
+				<metadata-artifact status="successful" details="" size="4867" time="644" location="/Users/Harold/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/ivy-2.6.3.xml" searched="true" original-local-location="/Users/Harold/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/ivy-2.6.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.6.3/jackson-core-2.6.3.pom"/>
 				<caller organisation="com.github.tomakehurst" name="wiremock" conf="compile, runtime" rev="2.6.3" rev-constraint-default="2.6.3" rev-constraint-dynamic="2.6.1" callerrev="2.1.7"/>
 				<caller organisation="com.atlassian.oai" name="swagger-request-validator-pact" conf="default, compile, runtime, master" rev="2.6.3" rev-constraint-default="2.6.3" rev-constraint-dynamic="2.6.3" callerrev="1.0.6"/>
 				<caller organisation="com.flipkart.zjsonpatch" name="zjsonpatch" conf="compile, runtime" rev="2.6.3" rev-constraint-default="2.6.3" rev-constraint-dynamic="2.3.2" callerrev="0.2.1"/>
@@ -1008,7 +1008,7 @@
 		</module>
 		<module organisation="com.fasterxml.jackson.core" name="jackson-annotations">
 			<revision name="2.6.3" status="release" pubdate="20151012115105" resolver="public" artresolver="public" homepage="http://github.com/FasterXML/jackson" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
-				<metadata-artifact status="successful" details="" size="1257" time="777" location="/Users/Harold/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.6.3.xml" searched="true" original-local-location="/Users/Harold/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.6.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.6.3/jackson-annotations-2.6.3.pom"/>
+				<metadata-artifact status="successful" details="" size="1257" time="686" location="/Users/Harold/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.6.3.xml" searched="true" original-local-location="/Users/Harold/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.6.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.6.3/jackson-annotations-2.6.3.pom"/>
 				<caller organisation="com.github.tomakehurst" name="wiremock" conf="compile, runtime" rev="2.6.3" rev-constraint-default="2.6.3" rev-constraint-dynamic="2.6.1" callerrev="2.1.7"/>
 				<caller organisation="com.atlassian.oai" name="swagger-request-validator-pact" conf="default, compile, runtime, master" rev="2.6.3" rev-constraint-default="2.6.3" rev-constraint-dynamic="2.6.3" callerrev="1.0.6"/>
 				<caller organisation="io.swagger" name="swagger-core" conf="compile, runtime" rev="2.6.3" rev-constraint-default="2.6.3" rev-constraint-dynamic="2.4.5" callerrev="1.5.8"/>
@@ -1290,7 +1290,7 @@
 		</module>
 		<module organisation="commons-lang" name="commons-lang">
 			<revision name="2.4" status="release" pubdate="20080319004228" resolver="public" artresolver="public" homepage="http://commons.apache.org/lang/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="54">
-				<metadata-artifact status="successful" details="" size="13976" time="790" location="/Users/Harold/.ivy2/cache/commons-lang/commons-lang/ivy-2.4.xml" searched="true" original-local-location="/Users/Harold/.ivy2/cache/commons-lang/commons-lang/ivy-2.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-lang/commons-lang/2.4/commons-lang-2.4.pom"/>
+				<metadata-artifact status="successful" details="" size="13976" time="525" location="/Users/Harold/.ivy2/cache/commons-lang/commons-lang/ivy-2.4.xml" searched="true" original-local-location="/Users/Harold/.ivy2/cache/commons-lang/commons-lang/ivy-2.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-lang/commons-lang/2.4/commons-lang-2.4.pom"/>
 				<caller organisation="net.sf.ezmorph" name="ezmorph" conf="compile, runtime" rev="2.3" rev-constraint-default="2.3" rev-constraint-dynamic="2.3" callerrev="1.0.6"/>
 				<caller organisation="net.sf.json-lib" name="json-lib" conf="compile, runtime" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="2.3"/>
 				<artifacts>

@@ -4,7 +4,7 @@
 		module="consumer-pact_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20161201113736"
+		publication="20161207113926"
 	>
 		<description>
 		consumer-pact
