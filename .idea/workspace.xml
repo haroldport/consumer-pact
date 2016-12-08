@@ -54,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/scala/com/latamautos/SwaggerValidatorPactConsumerTest.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
               <folding>
                 <element signature="e#24#64#0" expanded="true" />
               </folding>
@@ -931,7 +931,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/scala/com/latamautos/SwaggerValidatorPactConsumerTest.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
           <folding>
             <element signature="e#24#64#0" expanded="true" />
           </folding>
