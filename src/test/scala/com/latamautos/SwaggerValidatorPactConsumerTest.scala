@@ -50,7 +50,7 @@ class SwaggerValidatorPactConsumerTest extends FunSpec with Matchers {
       val json: String = {
         s"""
            |{
-           |  "id2" : "q1",
+           |  "id" : "q1",
            |  "title" : "question1",
            |  "text" : "question1"
            |}
