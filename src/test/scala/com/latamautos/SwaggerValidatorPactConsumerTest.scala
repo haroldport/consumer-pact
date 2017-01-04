@@ -52,7 +52,7 @@ class SwaggerValidatorPactConsumerTest extends FunSpec with Matchers {
            |{
            |  "id" : "q1",
            |  "title" : "question1",
-           |  "text" : "question1",
+           |  "text" : "question1"
            |}
         """.stripMargin
       }
