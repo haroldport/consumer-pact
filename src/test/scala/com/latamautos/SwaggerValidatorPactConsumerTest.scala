@@ -43,6 +43,35 @@ class SwaggerValidatorPactConsumerTest extends FunSpec with Matchers {
         }
     }
 
+    it("should be able to get an auth token 2") {
+      forgePact
+        .between("consumer-pact")
+        .and("provider-pact")
+        .addInteraction(
+          interaction
+            .description("Fetching least secure auth token ever")
+            .uponReceiving(
+              method = GET,
+              path = "/questions2/test",
+              query = None,
+              headers = Map("Accept" -> "application/json"),
+              body = None,
+              None
+            )
+            .willRespondWith(
+              status = 200,
+              headers = Map("Content-Type" -> "application/json; charset=UTF-8"),
+              body = ""
+            )
+        )
+        .runConsumerTest { mockConfig =>
+          //          val token = ProviderClient.fetchAuthToken(mockConfig.host, mockConfig.port, "Sally")
+          //
+          //          token.isDefined shouldEqual true
+          //          token.get.token shouldEqual "abcABC123"
+        }
+    }
+
     it("Should be able to create a contract with a simple body matcher for the request and response") {
 
       val endPoint = "/questions"
