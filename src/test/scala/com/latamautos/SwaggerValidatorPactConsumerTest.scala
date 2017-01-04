@@ -43,36 +43,53 @@ class SwaggerValidatorPactConsumerTest extends FunSpec with Matchers {
         }
     }
 
-//    it("should be able to fetch results"){
-//
-//      val question = Question("test", "MyTitle1", "The text of my question 1")
-//
-//      val body = write(
-//        question
-//      )
-//
-//      forgePact
-//        .between("Consumer")
-//        .and("Provider")
-//        .addInteraction(
-//          interaction
-//            .description("Fetching results")
-//            .given("Results: Bob, Fred, Harry")
-//            .uponReceiving("/questions/test")
-//            .willRespondWith(200, body)
-//        )
-//        .runConsumerTest { mockConfig =>
-//
-//          val results = ProviderClient.fetchResults(mockConfig.baseUrl)
-//
-//          results.isDefined shouldEqual true
-//          results.get.id shouldEqual "test"
-//          results.get.title shouldEqual "MyTitle1"
-//          results.get.text shouldEqual "The text of my question 1"
-//
-//        }
-//
-//    }
+    it("Should be able to create a contract with a simple body matcher for the request and response") {
+
+      val endPoint = "/questions"
+
+      val json: String = {
+        s"""
+           |{
+           |  "id" : "q1",
+           |  "title" : "question1",
+           |  "text" : "question1"
+           |}
+        """.stripMargin
+      }
+
+      forgePact
+        .between("consumer-pact")
+        .and("provider-pact")
+        .addInteraction(
+          interaction
+            .description("a simple post example with body matchers")
+            .uponReceiving(
+              method = POST,
+              path = endPoint,
+              query = None,
+              headers = Map.empty,
+              body = json,
+              matchingRules =
+                bodyRegexRule("id", "\\w+")
+                  ~> bodyTypeRule("title")
+            )
+            .willRespondWith(
+              status = 200,
+              headers = Map.empty,
+              body = "q1",
+              matchingRules = None
+            )
+        )
+        .runConsumerTest { mockConfig =>
+
+          val result = ProviderClient.doPostRequest(mockConfig.baseUrl, endPoint, Map.empty, json)
+
+          result.status should equal(200)
+          result.body should equal("q1")
+
+        }
+
+    }
 
   }
 
