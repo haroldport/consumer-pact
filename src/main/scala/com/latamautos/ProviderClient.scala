@@ -6,9 +6,38 @@ package com.latamautos
 import org.json4s.DefaultFormats
 import org.json4s.native.JsonParser._
 
-import scalaj.http.{Http, HttpResponse}
+import scalaj.http.{Http, HttpResponse, HttpRequest}
 
 object ProviderClient {
+
+  implicit def convertHeaders(headers: Map[String, IndexedSeq[String]]): Map[String, String] =
+    headers.map { h => (h._1, h._2.headOption.getOrElse("")) }
+
+  def doGetRequest(baseUrl: String, endPoint: String, headers: Map[String, String]): SimpleResponse = {
+    val request = Http(baseUrl + endPoint).headers(headers)
+
+    doRequest(request)
+  }
+
+  def doPostRequest(baseUrl: String, endPoint: String, headers: Map[String, String], body: String): SimpleResponse = {
+    val request = Http(baseUrl + endPoint)
+      .headers(headers)
+      .postData(body)
+
+    doRequest(request)
+  }
+
+  def doRequest(request: HttpRequest): SimpleResponse = {
+    try {
+      val response = request.asString
+      SimpleResponse(response.code, response.headers, response.body)
+    } catch {
+      case e: Throwable =>
+        SimpleResponse(500, Map(), e.getMessage)
+    }
+  }
+
+  case class SimpleResponse(status: Int, headers: Map[String, String], body: String)
 
   private implicit val formats = DefaultFormats
 
